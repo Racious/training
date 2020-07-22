@@ -21,7 +21,9 @@ public class ReadandOutPut {
 	            lines++;  
 	            s = reader.readLine();  
 	            if((lines - lineNumber) == 0) {  
-	             System.out.println(s);
+				 System.out.println(s);
+				 in.close(); 
+				 reader.close();
 	             return s;
 	            }
 	        }  
@@ -66,6 +68,7 @@ public class ReadandOutPut {
 			}else {
 				OutPut(s);				
 			}
+			scanner.close();
 	    } 
 	  
 }
