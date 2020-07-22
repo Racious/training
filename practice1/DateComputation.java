@@ -15,13 +15,13 @@ public class DateComputation {
 			a = req.nextLine();
 			System.out.println("請輸入加上的天數");
 			b = req.nextInt();
-			DateComputation(a, b);
+			DateAdd(a, b);
 			return;
 		}
 		req.close();
 	}
 
-	public static Date DateComputation(String date, int dateNum) {
+	public static Date DateAdd(String date, int dateNum) {
 		Date date2;
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		try {
