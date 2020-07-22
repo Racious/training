@@ -6,14 +6,13 @@ import java.util.Random;
 
 public class PlayLotto {
 	public static void main(String[] args) {
-		PlayLotto play = new PlayLotto();
-		String[] lottonumber = play.PlayLotto();
+		String[] lottonumber = new PlayLotto().LottoCreat();
 		for (int i = 0; i < lottonumber.length; i++) {
 			System.out.print(lottonumber[i] + " ");
 		}
 	}
 
-	public String[] PlayLotto() {	
+	public String[] LottoCreat() {	
 		Random random = new Random();
 		String s;
 		//樂透六筆數字
