@@ -16,6 +16,7 @@ public class DateComputation {
 			System.out.println("請輸入加上的天數");
 			b = req.nextInt();
 			DateAdd(a, b);
+			req.close();
 			return;
 		}
 		req.close();
