@@ -6,6 +6,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
+
+
 public class DateComputation {
 	public static void main(String[] args) {
 		Scanner req = new Scanner(System.in);
@@ -29,17 +31,13 @@ public class DateComputation {
 	 * @return
 	 */
 	public static Date DateAdd(String date, int dateNum) {
-		//Calendar calendar = Calendar.getInstance();
-		Date date2;
+		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		try {
-			date2 = sdf.parse(date);
-			System.out.println(date2);
-			long day = dateNum * 24 * 60 * 60 * 1000l;
-			long time = date2.getTime();
-			time += day;
-			date2.setTime(time);
-			System.out.println(date2);
+			calendar.setTime(sdf.parse(date));
+			System.out.println(calendar.getTime());
+			calendar.add(Calendar.DAY_OF_MONTH, dateNum);
+			System.out.println(calendar.getTime());
 
 		} catch (ParseException e) {
 			System.out.println("您輸入的格式有錯");
