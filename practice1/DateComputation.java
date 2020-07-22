@@ -25,9 +25,9 @@ public class DateComputation {
 		req.close();
 	}
 	/**
-	 * 
-	 * @param date
-	 * @param dateNum
+	 * 日期相加
+	 * @param date 指定日期
+	 * @param dateNum 指定天數
 	 * @return
 	 */
 	public static Date DateAdd(String date, int dateNum) {
