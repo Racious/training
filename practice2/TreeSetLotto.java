@@ -20,12 +20,10 @@ public class TreeSetLotto {
 		TreeSet<String> set =new TreeSet<String>();
 		Random random = new Random();
 		String s;
-		//樂透六筆數字
-		String[] number = new String[6];
 		//判斷是否已產生六筆不重複數字
 		while (set.size()<6) {
 			//產生亂數
-			int x = random.nextInt(10) + 1;
+			int x = random.nextInt(49) + 1;
 			//格式化
 			DecimalFormat g1 = new DecimalFormat("00");
 			//轉字串
