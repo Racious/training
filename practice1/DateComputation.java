@@ -2,6 +2,7 @@ package practice1;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -28,6 +29,7 @@ public class DateComputation {
 	 * @return
 	 */
 	public static Date DateAdd(String date, int dateNum) {
+		//Calendar calendar = Calendar.getInstance();
 		Date date2;
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		try {
