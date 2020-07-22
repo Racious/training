@@ -1,0 +1,5 @@
+1.OutputLotto
+2.CopyLotto
+3.ReadandOutPut
+4.LottoOutput20
+5.LottoZip

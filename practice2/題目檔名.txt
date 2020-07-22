@@ -1,0 +1,4 @@
+2&3.TaiwanID
+4.TreeSetLotto
+5.ArrayListLotto
+6.HashMapLotto
