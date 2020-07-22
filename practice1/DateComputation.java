@@ -21,7 +21,12 @@ public class DateComputation {
 		}
 		req.close();
 	}
-
+	/**
+	 * 
+	 * @param date
+	 * @param dateNum
+	 * @return
+	 */
 	public static Date DateAdd(String date, int dateNum) {
 		Date date2;
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
